@@ -1,0 +1,47 @@
+.copilot-sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.copilot-sidebar.open {
+  right: 0;
+}
+
+.copilot-sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.copilot-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.copilot-sidebar li {
+  margin-bottom: 10px;
+}
+
+.copilot-sidebar button {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.copilot-sidebar button:hover {
+  background-color: #0056b3;
+}

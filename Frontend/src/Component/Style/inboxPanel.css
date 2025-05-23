@@ -1,0 +1,121 @@
+.inbox-panel {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: white;
+  border-right: 1px solid var(--color-gray-200);
+  overflow: hidden;
+  flex-shrink: 0;
+  
+}
+
+.inbox-header {
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.inbox-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-3);
+  color: var(--color-gray-900);
+}
+
+.inbox-search {
+  position: relative;
+  margin-bottom: var(--spacing-3);
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--spacing-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-gray-400);
+}
+
+.inbox-search input {
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-2) var(--spacing-2) var(--spacing-8);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--border-radius-md);
+}
+
+.inbox-filter {
+  display: flex;
+  gap: var(--spacing-2);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-2);
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-1) var(--spacing-3);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 13px;
+  color: var(--color-gray-600);
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--color-gray-100);
+}
+
+.filter-btn.active {
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-700);
+}
+
+.filter-btn .count {
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-700);
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.filter-btn.active .count {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-800);
+  
+}
+
+.conversations-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.no-conversations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: var(--color-gray-500);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .inbox-panel {
+    width: 100%;
+    height: auto;
+    max-height: 40%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .inbox-panel {
+    width: 280px;
+  }
+}
