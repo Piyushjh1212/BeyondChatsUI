@@ -7,10 +7,11 @@
   background-color: #fff;
   border-left: 1px solid #ddd;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 20px 20px 80px; /* Add bottom padding to prevent overlap with input */
   transition: right 0.3s ease-in-out;
   z-index: 1000;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .copilot-sidebar.open {
@@ -43,5 +44,43 @@
 }
 
 .copilot-sidebar button:hover {
+  background-color: #0056b3;
+}
+
+/* Fixed Input Box at Bottom */
+.copilot-input-area {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; /* match sidebar padding */
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  /* background: #fff; */
+  padding: 10px;
+  /* box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  z-index: 1001; /* ensure it's above sidebar */
+}
+
+.copilot-input-area input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.copilot-input-area button {
+  padding: 8px 12px;
+  width: 100px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.copilot-input-area button:hover {
   background-color: #0056b3;
 }

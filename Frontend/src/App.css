@@ -207,17 +207,22 @@ input:focus, textarea:focus {
   top: 20px;
   right: 20px;
   z-index: 1100;
-  padding: 10px 16px;
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  padding: 0;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: black;
+  outline: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+}
+.toggle-copilot-button:hover {
+  border: 2px solid transparent;
 }
 
-.toggle-copilot-button:hover {
-  background-color: #0056b3;
+.toggle-copilot-button:focus,
+.toggle-copilot-button:active {
+  outline: none;
+  box-shadow: none;
 }
+
+

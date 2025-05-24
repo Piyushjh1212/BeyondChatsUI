@@ -1,14 +1,33 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { mockConversations } from './data/mockData.js'
 import './App.css'
 import InboxPanel from './Component/InboxPanel'
 import ChatPanel from './Component/ChatPanel.jsx'
 import CopilotPanel from './Component/CopilotPanel.jsx'
-
+import { FiX} from 'react-icons/fi'
+import { MdMenuOpen } from 'react-icons/md'
 function App() {
   const [conversations, setConversations] = useState(mockConversations)
   const [selectedConversationId, setSelectedConversationId] = useState(mockConversations[0].id)
   const [isCopilotOpen, setIsCopilotOpen] = useState(false)
+  const copilotRef = useRef();
+
+  useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      isCopilotOpen &&
+      copilotRef.current &&
+      !copilotRef.current.contains(event.target)
+    ) {
+      setIsCopilotOpen(false);
+    }
+  };
+
+  document.addEventListener('mousedown', handleClickOutside);
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
+}, [isCopilotOpen]);
 
   const selectedConversation = conversations.find(
     (conversation) => conversation.id === selectedConversationId
@@ -80,14 +99,16 @@ function App() {
         className="toggle-copilot-button"
         onClick={() => setIsCopilotOpen((prev) => !prev)}
       >
-        {isCopilotOpen ? '❌ Close Copilot' : '🤖 Open Copilot'}
+        {isCopilotOpen ? <FiX /> : <MdMenuOpen />}
       </button>
-
-      <CopilotPanel
+      <div ref={copilotRef}>
+        <CopilotPanel
         isOpen={isCopilotOpen}
         conversation={selectedConversation}
         onUseSuggestion={handleUseSuggestion}
       />
+      </div>
+      
     </div>
   )
 }
