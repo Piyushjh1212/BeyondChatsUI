@@ -12,6 +12,8 @@ function App() {
   const [isCopilotOpen, setIsCopilotOpen] = useState(false)
   const copilotRef = useRef();
 
+
+
   useEffect(() => {
   const handleClickOutside = (event) => {
     if (

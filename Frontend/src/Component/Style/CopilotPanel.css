@@ -32,55 +32,42 @@
   margin-bottom: 10px;
 }
 
-.copilot-sidebar button {
-  width: 100%;
+.copilot-suggestion-button-div{
+  position: absolute;
+  width: fit-content;
+  bottom: 20px;
+}
+
+
+.copilot-suggestion-button {
+  bottom: 20px;
+  width: 80%;
   padding: 8px 12px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #ddd;
+  font-weight: lighter;
+  outline: none;
   border-radius: 6px;
   cursor: pointer;
   text-align: left;
+  margin-bottom: 10px;
 }
 
-.copilot-sidebar button:hover {
-  background-color: #0056b3;
-}
 
-/* Fixed Input Box at Bottom */
-.copilot-input-area {
-  position: absolute;
-  bottom: 20px;
-  right: 20px; /* match sidebar padding */
-  width: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  /* background: #fff; */
+div .copilot-Input{
+  width: 90%;
   padding: 10px;
-  /* box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1); */
-  border-radius: 8px;
-  z-index: 1001; /* ensure it's above sidebar */
-}
-
-.copilot-input-area input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.span{
+  font-weight: bold;
 }
 
-.copilot-input-area button {
-  padding: 8px 12px;
-  width: 100px;
-  background: linear-gradient(to right, #007bff, #0056b3);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-  cursor: pointer;
-}
 
-.copilot-input-area button:hover {
-  background-color: #0056b3;
-}
+
+
+
