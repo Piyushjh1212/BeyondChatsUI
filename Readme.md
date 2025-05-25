@@ -49,7 +49,7 @@ A modern customer support dashboard interface featuring a clean three-panel layo
 
 ##  Getting Started
 
-## nstall Dependencies
+## Install Dependencies
 
  npm install
 
