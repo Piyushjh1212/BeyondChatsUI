@@ -85,3 +85,7 @@ const CopilotPanel = ({ isOpen, conversation }) => {
 };
 
 export default CopilotPanel;
+
+
+
+
