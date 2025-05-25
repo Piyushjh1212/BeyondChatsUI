@@ -41,18 +41,18 @@ A modern customer support dashboard interface featuring a clean three-panel layo
 
 ##  Getting Started
 
-### 1. Clone the repo
-```bash
-git clone https://github.com/your-username/support-dashboard.git
-cd support-dashboard
+### 📂 GitHub Repository
+
+[https://github.com/Piyushjh1212/BeyondChatsUI](https://github.com/Piyushjh1212/BeyondChatsUI)
+
 
 
 ##  Getting Started
 
 ## nstall Dependencies
 
-=> npm install
+ npm install
 
 ## Start the development server
 
-=> npm run dev
+ npm run dev
