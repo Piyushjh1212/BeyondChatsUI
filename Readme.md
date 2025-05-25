@@ -1,26 +1,26 @@
-# 🧠 Customer Support Dashboard with AI Copilot
+#  Customer Support Dashboard with AI Copilot
 
 A modern customer support dashboard interface featuring a clean three-panel layout: an inbox list, a real-time chat view, and an AI-powered assistant panel. This UI is perfect for managing support conversations and integrating intelligent suggestions for faster, better replies.
 
 ---
 
-## 📸 Screenshot
+##  Screenshot
 
 ![Support Dashboard Screenshot](./screenshot.png)
 
 ---
 
-## 📦 Features
+##  Features
 
-- 📨 **Inbox Panel** — Displays user list or conversations.
-- 💬 **Chat Panel** — Central area for message exchange between agent and customer.
-- 🤖 **AI Copilot Panel** — Smart assistant that provides reply suggestions or answers.
-- ✅ Clean, modern, and responsive layout using **React**.
-- 📄 Easily extendable for backend and AI integration.
+-  **Inbox Panel** — Displays user list or conversations.
+-  **Chat Panel** — Central area for message exchange between agent and customer.
+-  **AI Copilot Panel** — Smart assistant that provides reply suggestions or answers.
+-  Clean, modern, and responsive layout using **React**.
+-  Easily extendable for backend and AI integration.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React.js (Functional Components)
 - **Styling**: Inline CSS (or use your preferred CSS solution)
@@ -39,7 +39,7 @@ A modern customer support dashboard interface featuring a clean three-panel layo
 
 
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the repo
 ```bash
